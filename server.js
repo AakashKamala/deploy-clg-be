@@ -70,7 +70,7 @@ app.post('/api/upload', (req, res) => {
 
     // Generate the public URL for the file
     const baseUrl = process.env.NODE_ENV === 'production'
-      ? 'https://your-production-domain.com' // Replace with your production domain
+      ? 'https://deploy-clg-be.onrender.com' // Replace with your production domain
       : `http://localhost:${PORT}`;
     
     const fileUrl = `${baseUrl}/uploads/${req.file.filename}`;
